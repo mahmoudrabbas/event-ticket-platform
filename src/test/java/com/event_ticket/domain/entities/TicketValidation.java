@@ -1,4 +1,4 @@
-package com.event_ticket.entities;
+package com.event_ticket.domain.entities;
 
 import com.event_ticket.enums.TicketValidationMethod;
 import com.event_ticket.enums.TicketValidationStatus;

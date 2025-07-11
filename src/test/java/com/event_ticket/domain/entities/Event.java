@@ -1,4 +1,4 @@
-package com.event_ticket.entities;
+package com.event_ticket.domain.entities;
 
 import com.event_ticket.enums.EventStatus;
 import jakarta.persistence.*;
@@ -57,7 +57,7 @@ public class Event {
     private User organizer;
 
     @OneToMany(mappedBy = "event", cascade = CascadeType.ALL)
-    private List<TicketType> ticketType;
+    private List<TicketType> ticketType = new ArrayList<>();
 
     @ManyToMany(mappedBy = "attendingEvents")
     private List<User> attendees = new ArrayList<>();
